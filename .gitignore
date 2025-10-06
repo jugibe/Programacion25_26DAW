@@ -1,0 +1,28 @@
+# Ignorar carpetas y archivos generados por Eclipse
+bin/
+*.class
+*.log
+
+# Ignorar metadatos del workspace (no del proyecto)
+.metadata/
+
+# Ignorar archivos temporales y de sistema
+*.tmp
+*.bak
+*.swp
+*~.nib
+.DS_Store
+
+# Ignorar carpetas de build comunes (Maven, Gradle)
+target/
+build/
+
+# Ignorar archivos jar externos si no están gestionados por el proyecto
+*.jar
+
+# No ignorar archivos de configuración de Eclipse para que el proyecto se pueda abrir directamente
+# .project
+# .classpath
+# .settings/
+
+
