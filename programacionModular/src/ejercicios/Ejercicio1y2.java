@@ -20,7 +20,7 @@ public class Ejercicio1y2 {
 	public static void saludar() {
 		System.out.println("Buenos dias Juanjo. Bienvenido a la clase de Programacion en Java");
 	}
-	
+	//metodo que saluda a la persona indicada en el String()
 	public static void saludar(String nombre) {
 		System.out.println("Buenos dias" + nombre+ ". Bienvenido a la clase de Programacion en Java");
 	}

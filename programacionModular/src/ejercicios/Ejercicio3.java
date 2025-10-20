@@ -5,7 +5,7 @@ package ejercicios;
 public class Ejercicio3 {
 
 	public static void main(String[] args) {
-		//llamada al metodo dibujarCuadrado(int n)
+		/*llamada al metodo dibujarCuadrado(int n) que está en la clase creada (sin main) donde creamos los proceso*/
 		Dibujar.dibujarCuadrado(5);
 	}
 	/*
