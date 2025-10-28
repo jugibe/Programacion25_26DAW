@@ -7,7 +7,7 @@ public class Ejercicio8 {
 
 	public static void main(String[] args) {
 		System.out.println(cifrasNumero(40));
-
+		System.out.println(cifrasNumero2(450));
 	}
 	
 	public static int cifrasNumero(int n) {
@@ -17,5 +17,10 @@ public class Ejercicio8 {
 			cifras++; //sumamos 1 al contador cada vez que entramos en el bucle
 		}while((n/(int)Math.pow(10, cifras))!=0); //dividimos el numero entre 10 hasta que el resto sea 0.
 		return cifras; //devolvemos el numero de cifras.
+	}
+	// Metodo que calcula las cifras del numero usando Strings
+	public static int cifrasNumero2(int n) {
+		String s = n + "";
+		return s.length();
 	}
 }

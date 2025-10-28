@@ -10,7 +10,7 @@ public class Recursividad2 {
 
 	}
 	public static long factorial(int n) {
-		if (n == 0 || n == 1) {//condición/clausula de salida
+		if (n == 0 || n == 1) {//condición/clausula de salida / caso base
 			return 1;
 		}else {
 			return n * factorial(n - 1);//Recursividad(el metodo se llama a si mismo)
