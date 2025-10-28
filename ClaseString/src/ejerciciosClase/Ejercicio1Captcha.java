@@ -19,14 +19,19 @@ public class Ejercicio1Captcha {
 		
 	}
 	public static String generarCaptcha() {
-		String captcha = "" + generarMayus() + generarMinuscula() + generarCaracterEspecial() + generarCaracterEspecial()
-		+ generarMayus() + generarMinuscula();
+		String captcha = "" + generarMayus() + generarMinuscula() + generarCaracterEspecial() + generarDigito()
+		+ generarMayus() + generarMinuscula()+generarDigito();
 		return captcha;
 	}
 	public static char generarMayus() {
 		String listaMayus = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
 		// int letraAleatoria = (int)(Math.random()*26 + 65);
 		return listaMayus.charAt((int)(Math.random()*listaMayus.length()));
+	}
+	public static char generarDigito() {
+		String lista = "0123456789";
+		// int letraAleatoria = (int)(Math.random()*26 + 65);
+		return lista.charAt((int)(Math.random()*lista.length()));
 	}
 	public static char generarCaracterEspecial() {
 		String listaCaracteres = "-#@_€%&/!?¿*";
