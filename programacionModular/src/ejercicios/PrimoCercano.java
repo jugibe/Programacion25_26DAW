@@ -6,7 +6,7 @@ public class PrimoCercano {
 
 	public static void main(String[] args) {
 		int incremento=0;
-		int numero=13;
+		int numero=125;
 		while(!(esPrimo(numero-incremento))){
 			incremento ++;
 		} 
