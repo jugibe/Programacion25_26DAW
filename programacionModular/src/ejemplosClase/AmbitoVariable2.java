@@ -5,7 +5,10 @@ package ejemplosClase;
  * Una variable se puede utilizar dentro del bloque en la que esta definida.
  */
 public class AmbitoVariable2 {
+	
+	
 	static int j=5; //esta variable es accesible en toda la clase.
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		j++;
@@ -16,7 +19,7 @@ public class AmbitoVariable2 {
 	
 	public static void prueba() {
 		j++;
-	
 	}
+	
 	
 }
