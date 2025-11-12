@@ -11,14 +11,16 @@ public class Ejercicio1Sumatorio {
 		sumaFilas(array);
 		sumaColumnas(array);
 	}
-	//metodo que llena el array con numeros aleatorios del 1 al 100
-	public static int[][] llenarArray(int f[][]) {
+	
+	
+	//metodo que llena el array con numeros aleatorios del 1 al 10
+	public static void llenarArray(int f[][]) {
 		for(int i=0;i<f.length;i++) {
 			for(int j=0;j<f[i].length;j++) {
 				f[i][j]=(int)(Math.random()*10)+1;
 			}
 		}
-		return f;
+
 	}
 	//metodo que muestra el array
 	public static void mostrarArray(int f[][]) {
