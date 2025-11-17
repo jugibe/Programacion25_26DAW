@@ -27,13 +27,12 @@ public class EjercicioCambiarFilas {
 		mostrarArray(array);
 	}
 
-	private static int[][] llenarArray(int f[][]) {
+	private static void llenarArray(int f[][]) {
 		for (int i = 0; i < f.length; i++) {
 			for (int j = 0; j < f[i].length; j++) {
 				f[i][j] = (int) (Math.random() * 9) + 1;
 			}
 		}
-		return f;
 	}
 
 	private static void mostrarArray(int f[][]) {

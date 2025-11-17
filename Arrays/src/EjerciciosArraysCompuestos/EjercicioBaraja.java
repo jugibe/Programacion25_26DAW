@@ -22,6 +22,7 @@ public class EjercicioBaraja {
 	}//Este metodo rellena el array con cartas de la baraja en el formato indicado
 	private static void llenarArray(String [][]f) {
 		String palo = "OCBE";
+		// String[] palo={"O","C","E","B"} CAMBIAR PALO[(int)(Math.random()*4)]
 		String numero = "A234567SCR";
 		
 		//Elegiremos numero aleatorios, uno para el palo y otro para la carta 
@@ -32,6 +33,7 @@ public class EjercicioBaraja {
 			}
 		}		
 	}
+	
 	//Metodo que imprime el array con las cartas
 	public static void imprimeArray(String [][]array) {
 		for(int i=0;i<array.length;i++) {
