@@ -8,10 +8,15 @@ tacómetros, etc).
 La clase deberá tener los atributos valorMinimo, valorMaximo, valorActual,
 unidades y nombre del indicador. En el momento de la creación de cada objeto se
 asignarán todos los elementos salvo el valorActual. Entre los métodos que se
-programarán deberán estar el de asignación del valorActual, imprimir el valor, imprimir el
+programarán deberán estar el de asignación del valorActual, get valorActual, imprimir el
 indicador e incrementar y disminuir el valorActual con el que cuentan.
-En ese programa (el principal), crearás un vector de elementos de tipo Indicador y se podrá
-escoger el indicador a tratar.
+En ese programa (el principal), crearás un  elemento de tipo Indicador con un menú 
+conlas siguientes opciones: 
+verindicador.
+ver valor actual
+aumentar
+disminuir 
+salir
  */
 public class Indicador {
 
@@ -48,7 +53,10 @@ public class Indicador {
 	
 	//metodos setters
 	public void setValorActual(double valorActual) {
-		this.valorActual=valorActual;
+		if (valorActual<this.valorMaximo) {
+			this.valorActual=valorActual;
+		}
+		
 	}
 	
 	//metodos para incrementar y decrementar
@@ -64,5 +72,28 @@ public class Indicador {
 	}
 	
 	//metodos para imprimir los valores
+	/*
+	 * Metodo que muestra el indicador. 
+	 * Podriamos utilizar el toString y delegar la E/S al main
+	 * asi la clase es reutilizable
+	 * 
+	 */
+	public void verIndicador() {
+		System.out.println("nombre: "+ this.nombre+ "\n"+
+				"valor minimo:"+ this.valorMinimo+ this.unidades +"\n"+
+				"valor maximo:"+ this.valorMaximo+ this.unidades+"\n"+
+				"valor Actual:"+ this.valorActual+ this.unidades);		
+	}
+	
+	/*
+	 * Metodo que muestra el valor actual.
+	 * Podriamos utilizar el getValorActual y delegar la E/S al main
+	 * asi la clase es reutilizable
+	 * 
+	 */
+	public void verValorActual() {
+		System.out.println("Valor actual:"+ this.valorActual+ " "+ this.unidades);
+	}
+	
 	
 }
